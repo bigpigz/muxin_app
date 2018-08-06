@@ -1,0 +1,52 @@
+@import "~@/common/style/variable.less";
+// 背景图片
+
+.static-body{
+	.static-position(top);
+	bottom:0;
+	min-height: 100%;
+}
+.static-position(@_){
+	position: fixed;
+	left:0;
+	right:0;
+	width:100%;
+	overflow: hidden;
+}
+.static-position(top){
+	top:0
+}
+.static-position(bottom){
+	bottom:0
+}
+.body-height{
+	height:100%;
+	overflow:hidden;
+}
+.products-profile{
+	display: flex;
+	align-items:center;
+	font-size:@font-size-medium;
+	background-color: @color-gray-l;
+	padding:@box-margin;
+	margin-bottom: @line-height*3;
+	.bd-img{
+		width:1.9rem;
+		height:1.9rem;
+	}
+	.bd-infor{
+		margin:0 0.4rem 0 0.24rem;
+		.title{
+			overflow:hidden;
+			text-overflow:ellipsis;
+			display:-webkit-box;
+			-webkit-box-orient:vertical;
+			-webkit-line-clamp:3;
+			margin-bottom:@line-height*2;
+		}
+		.sku{
+			color:@color-gray-b;
+			font-size: @font-size-small;
+		}
+	}
+}

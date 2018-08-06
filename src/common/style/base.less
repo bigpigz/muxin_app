@@ -1,0 +1,32 @@
+@import "~@/common/style/variable.less";
+
+body, html{
+  line-height: 1.4;
+  font-family:'microsoft yahei', arial, sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: @color-gray;
+  color: @color-normal;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	clear: both;
+	visibility: hidden;
+}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.hidden{display: none;}
+::-webkit-input-placeholder{
+  color:@color-gray-b;
+}
+.iconfont{
+  font-size: @font-size-large;
+}
+textarea{
+  font-family:'microsoft yahei', arial, sans-serif;
+  font-size: @font-size-medium;
+}
